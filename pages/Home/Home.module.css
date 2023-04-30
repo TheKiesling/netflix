@@ -1,0 +1,7 @@
+.netflix {
+    width: 100vw;
+    height: 100vh;
+    background-color: #0b0b0b;
+    display: flex;
+    flex-direction: column;
+}
