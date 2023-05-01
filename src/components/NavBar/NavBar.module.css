@@ -1,0 +1,125 @@
+.navBar, .navBarN{
+    width: 100%;
+    height: 70px;
+    display: flex;
+    font-size: 14px;
+    justify-content: space-between;
+    align-items: center;
+    color: #fff;
+    position: fixed;
+    top: 0;
+    left: 0;
+}
+
+.navBar{
+    background-color: transparent;
+}
+
+.navBarN{
+    background-color: #0b0b0b;
+}
+
+.navBar > * > *, .navBarN > * > * {
+    cursor: pointer;
+    padding: 10px;
+}
+
+.navPrimary, .navSecondary{
+    display: flex;
+    align-items: center;
+}
+
+.navPrimary{
+    margin-left: 20px;
+}
+
+.navPrimary > * {
+    max-height: 25px;
+}
+
+.navPrimary > *:hover{
+    color: #cbcbcb;
+}
+
+.navPrimary span:nth-child(2), .navPrimary span:nth-child(2):hover{
+    font-weight: 700;
+    cursor: default;
+    color: #fff;
+}
+
+.logo {
+    max-width: 150px;
+}
+
+.navSecondary{
+    margin-right: 60px;
+}
+
+.navSecondary  * {
+    max-height: 30px;
+}
+
+.navSecondary > div:first-child, .navSecondary > div:nth-child(3){
+    margin-top: 5px;
+}
+
+.search, .noSearch{
+    display: flex;
+    align-items: center;
+    margin-bottom: 5px;
+}
+
+.search input{
+    background-color: #0b0b0b;
+    color:#fff;
+    border-color: #fff;
+    height: 45px;
+    width: 225px;
+    font-size: 15px;
+    position: relative;
+    transition: all 0.15s ease-out;
+}
+
+.search svg{
+    position: absolute;
+    z-index: 2;
+    margin-left: 5px;
+}
+
+.search input:focus {
+    padding: 0 0px 0 40px;
+}
+
+.profile, .notifications{
+    display: flex;
+    flex-direction: column;
+}
+
+.avatar{
+    display: flex;
+    align-items: center;
+    transform-style: preserve-3d;
+}
+
+.avatar img{
+    border-radius: 15%;
+}
+
+.avatar svg{
+   margin-left: 5px;
+}
+
+.down {
+    transform: rotateX(0deg);
+    transition: transform 0.2s ease-out;
+}
+
+.up{
+    transform: rotateX(180deg);
+    transition: transform 0.2s ease-out;
+}
+  
+.profile .arrowUp{
+    font-size: 30px !important;
+    align-self: flex-end;
+}

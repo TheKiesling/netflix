@@ -1,0 +1,50 @@
+.notification{
+    display: flex;
+    gap: 45px;
+    width: 100%;
+    min-height: 60px;
+    border-bottom: 1px solid #ccc;
+    padding: 20px 0 20px 5px;
+    background-color: #0b0b0b;
+    opacity: 0.90;
+}
+
+.notification:hover{
+    opacity: 1;
+}
+
+.notification .img{
+    width: 100px;
+    display: flex;
+    justify-content: center;
+}
+
+.img img{
+    min-height: 60px;
+    min-width: 100px;
+    object-fit: cover;
+    margin-left: 40px;
+    border-radius: 5%;
+}
+
+.text{
+    display: flex;
+    flex-direction: column;
+    padding: 0px;
+    margin-top: 1px;
+}
+
+.text h1{
+    font-size: 16px;
+    padding: 1px;
+    margin: 0;
+    font-weight: 500;
+    color: #dcdcdc;
+}
+
+.text span{
+    margin-top: 3px;
+    font-size: 12px;
+    font-weight: 300;
+    color: #cbcbcb;
+}
