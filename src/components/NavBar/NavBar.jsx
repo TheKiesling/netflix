@@ -1,4 +1,4 @@
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import styles from './NavBar.module.css'
 import { ReactComponent as Logo } from '../../assets/logo.svg'
 import NavElement from '../navElement/navElement'
@@ -16,21 +16,9 @@ const NavBar = () => {
   const [showSearch, setShowSearch] = useState(false)
   const [transparent, setTransparent] = useState(true)
 
-  useEffect(() => {
-    const handleScroll = () => {
-      const yPos = window.pageYOffset
-      if (yPos > 0) {
-        setTransparent(false)
-      } else {
-        setTransparent(true)
-      }
-    };
-    window.addEventListener('scroll', handleScroll)
-
-    return () => {
-      window.removeEventListener('scroll', handleScroll)
-    };
-  }, [])
+  window.onscroll = () => {
+    setTransparent(window.pageYOffset === 0 ? true : false)
+  }
 
   return (
     <nav className={transparent ? `${styles.navBar}` : `${styles.navBarN}`}>

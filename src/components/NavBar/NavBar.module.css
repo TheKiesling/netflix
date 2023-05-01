@@ -2,7 +2,7 @@
     width: 100%;
     height: 70px;
     display: flex;
-    font-size: 14px;
+    font-size: 14.5px;
     justify-content: space-between;
     align-items: center;
     color: #fff;
@@ -12,7 +12,7 @@
 }
 
 .navBar{
-    background-color: transparent;
+    background-color: linear-gradient(to top, transparent 0%, rgba(0,0,0,0.3) 50%);
 }
 
 .navBarN{
@@ -21,7 +21,7 @@
 
 .navBar > * > *, .navBarN > * > * {
     cursor: pointer;
-    padding: 10px;
+    padding: 9.5px;
 }
 
 .navPrimary, .navSecondary{
@@ -30,7 +30,7 @@
 }
 
 .navPrimary{
-    margin-left: 20px;
+    margin-left: 21px;
 }
 
 .navPrimary > * {
@@ -45,14 +45,16 @@
     font-weight: 700;
     cursor: default;
     color: #fff;
+    margin-left: -1px;
 }
 
 .logo {
+    margin-top: -2px;
     max-width: 150px;
 }
 
 .navSecondary{
-    margin-right: 60px;
+    margin-right: 45px;
 }
 
 .navSecondary  * {
