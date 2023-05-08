@@ -6,6 +6,9 @@
     top: 60px;
     display: flex;
     flex-direction: column;
+    background-color: #0b0b0b;
+    max-height: fit-content;
+    padding: 0;
 }
 
 .element{
@@ -14,7 +17,6 @@
     display: flex;
     align-items: center;
     padding: 5px;
-    background-color: #0b0b0b;
     opacity: 0.95;
 }
 
@@ -55,6 +57,7 @@ hr {
 
 .element:last-child {
     margin-top: -20px;
+    align-self: center;
 }
 
 

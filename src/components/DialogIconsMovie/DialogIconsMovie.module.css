@@ -1,0 +1,13 @@
+.dialog{
+    clip-path: polygon(0 23%, 100% 24%, 100% 75%, 58% 76%, 50% 90%, 42% 75%, 0% 75%);
+    background-color: #E6E6E6;
+    color: #181818;
+    padding: 30px;
+    position: absolute;
+    font-weight: 600;
+    top: -80px;
+    left: -50px;
+    width:max-content;
+    text-align: center;
+    z-index: 99;
+}

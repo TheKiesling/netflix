@@ -83,6 +83,7 @@
     font-size: 17.5px;
     align-items: center;
     border-left: 3px solid #cbcbcb;
+    cursor: default;
 }
 
 .age span {

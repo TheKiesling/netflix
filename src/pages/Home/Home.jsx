@@ -1,7 +1,9 @@
-import React, {useState, useEffect} from 'react'
+import React from 'react'
 import styles from './Home.module.css'
 import NavBar from '../../components/NavBar/NavBar'
 import MainSerie from '../../components/MainSerie/MainSerie'
+import Slider from '../../components/Slider/Slider'
+import Footer from '../../components/Footer/Footer'
 
 const Home = () => (
   <body className={`${styles.netflix}`}>
@@ -10,24 +12,15 @@ const Home = () => (
     </header>
     <main>
       <MainSerie />
+      <div className={`${styles.sliders}`}>
+        <Slider title="Mi lista" />
+        <Slider title="Volver a verlo" />
+        <Slider title="Solo en Netflix" />
+      </div>
     </main>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-    <br></br>
-
-    <br></br>
+    <footer>
+      <Footer />
+    </footer>
   </body>
 )
 

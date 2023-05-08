@@ -1,0 +1,68 @@
+.slider{
+    width: 100vw;
+    margin-top: 55px;
+    z-index: 7;
+}
+
+.titleContainer{
+    display: flex;
+    cursor: pointer;
+}
+
+.title {
+    color: #FFF;
+    font-size: 20px;
+    font-weight: 500;
+    margin-left: 60px;
+}
+
+.exploreContainer {
+    color: #54B9C5;
+    transition: all 0.15s ease;
+    font-weight: 600;
+    margin-left: 15px;
+    font-size: 13px;
+    cursor: pointer;
+    display: flex;
+    align-items: center;
+    margin-top: 5px;
+}
+
+.exploreArrow{
+    font-size: 1em;
+    transition: all 0.15s ease;
+}
+
+.movies{
+    display: flex;
+    width: max-content;
+    margin-left: 60px;
+    transform: translateX(0px);
+    transition: all 1s ease;
+}
+
+.container{
+    position: relative;
+}
+
+.arrow{
+    min-width: 60px;
+    min-height: 120px;
+    background-color: rgb(22,22,22,0.5);
+    color: #FFF;
+    position: absolute;
+    z-index: 9;
+    top: 10px;
+    bottom: 0;
+    margin: auto;
+    cursor: pointer;
+}
+
+.left{
+    left: 0;
+    font-size: 15px;
+}
+
+.right{
+    right: 0;
+}
