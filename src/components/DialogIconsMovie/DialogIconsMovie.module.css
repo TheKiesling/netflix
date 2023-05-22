@@ -6,7 +6,7 @@
     position: absolute;
     font-weight: 600;
     top: -80px;
-    left: -50px;
+    transform: translateX(-50%);
     width:max-content;
     text-align: center;
     z-index: 99;

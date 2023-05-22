@@ -47,7 +47,7 @@ const Movie = ({ index }) => {
                           onMouseLeave={() => setDescAdd(false)}
                         />
                         {
-                          descAdd ? <DialogIconsMovie text="Agregar a Mi lista" /> : null
+                          descAdd ? <DialogIconsMovie text="Agregar a Mi lista" left="30" /> : null
                         }
                       </div>
                       <div>
@@ -73,7 +73,7 @@ const Movie = ({ index }) => {
                                     onMouseLeave={() => setDescDislike(false)}
                                   />
                                   {
-                                    descDislike ? <DialogIconsMovie text="No es para mí" /> : null
+                                    descDislike ? <DialogIconsMovie text="No es para mí" left="20" /> : null
                                   }
                                 </div>
                                 <div className={`${styles.addIcon}`}>
@@ -83,7 +83,7 @@ const Movie = ({ index }) => {
                                     onMouseLeave={() => setDescLike(false)}
                                   />
                                   {
-                                    descLike ? <DialogIconsMovie text="Me gusta" /> : null
+                                    descLike ? <DialogIconsMovie text="Me gusta" left="20" /> : null
                                   }
                                 </div>
                                 <div className={`${styles.addIcon}`}>
@@ -93,7 +93,7 @@ const Movie = ({ index }) => {
                                     onMouseLeave={() => setDescLove(false)}
                                   />
                                   {
-                                    descLove ? <DialogIconsMovie text="Me encanta" /> : null
+                                    descLove ? <DialogIconsMovie text="Me encanta" left="20" /> : null
                                   }
                                 </div>
                               </div>
@@ -112,9 +112,7 @@ const Movie = ({ index }) => {
                         descDetails ? (
                           <DialogIconsMovie
                             text="Episodios e info"
-                            style={{
-                              backgroundColor: 'aqua',
-                            }}
+                            left="23"
                           />
                         ) : null
                       }
