@@ -43,12 +43,15 @@ const NavBar = () => {
       <div className={`${styles.navSecondary}`}>
         <div
           className={showSearch ? `${styles.search}` : `${styles.noSearch}`}
+          aria-hidden
           onClick={() => setShowSearch(true)}
           onBlur={() => setShowSearch(false)}
           onKeyUp=""
+          role="button"
         >
           <SearchIcon />
           {
+            // eslint-disable-next-line jsx-a11y/no-autofocus
             showSearch ? <input placeholder="Títulos, personas, géneros" autoFocus /> : null
           }
         </div>

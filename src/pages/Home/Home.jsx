@@ -6,22 +6,22 @@ import Slider from '../../components/Slider/Slider'
 import Footer from '../../components/Footer/Footer'
 
 const Home = () => (
-  <body className={`${styles.netflix}`}>
+  <div className={`${styles.netflix}`}>
     <header>
       <NavBar />
     </header>
-    <main>
+    <div>
       <MainSerie />
       <div className={`${styles.sliders}`}>
         <Slider title="Mi lista" />
         <Slider title="Volver a verlo" />
         <Slider title="Solo en Netflix" />
       </div>
-    </main>
+    </div>
     <footer>
       <Footer />
     </footer>
-  </body>
+  </div>
 )
 
 export default Home

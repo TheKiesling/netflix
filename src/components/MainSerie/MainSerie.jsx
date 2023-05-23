@@ -7,6 +7,7 @@ const MainSerie = () => (
   <div className={`${styles.mainSerie}`}>
     <div className={`${styles.info}`}>
       <img
+        // eslint-disable-next-line max-len
         src="https://upload.wikimedia.org/wikipedia/en/thumb/8/8a/Better_Call_Saul_logo.svg/1200px-Better_Call_Saul_logo.svg.png"
         alt=""
       />

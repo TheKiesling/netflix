@@ -9,7 +9,7 @@ import PropTypes from 'prop-types'
 import styles from './Movie.module.css'
 import DialogIconsMovie from '../DialogIconsMovie/DialogIconsMovie'
 
-const Movie = ({ index }) => {
+const Movie = ({ index, imgSrc }) => {
   const [showInfo, setShowInfo] = useState(false)
   const [showLike, setShowLike] = useState(true)
   const [descAdd, setDescAdd] = useState(false)
@@ -26,7 +26,7 @@ const Movie = ({ index }) => {
       onMouseLeave={() => setShowLike(true)}
     >
       <img
-        src="https://i.blogs.es/6d84c8/breaking-bad/1366_2000.jpg"
+        src={imgSrc}
         alt=""
       />
       {
@@ -138,4 +138,5 @@ export default Movie
 
 Movie.propTypes = {
   index: PropTypes.number.isRequired,
+  imgSrc: PropTypes.string.isRequired,
 }

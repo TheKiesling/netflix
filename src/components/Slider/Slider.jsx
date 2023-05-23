@@ -70,11 +70,26 @@ const Slider = ({ title }) => {
           className={`${styles.movies}`}
           ref={moviesRef}
         >
-          <Movie index={0} />
-          <Movie index={1} />
-          <Movie index={2} />
-          <Movie index={3} />
-          <Movie index={4} />
+          <Movie
+            index={0}
+            imgSrc="https://i.blogs.es/6d84c8/breaking-bad/1366_2000.jpg"
+          />
+          <Movie
+            index={1}
+            imgSrc="https://ntvb.tmsimg.com/assets/p9155926_b_h8_as.jpg?w=960&h=540"
+          />
+          <Movie
+            index={2}
+            imgSrc="https://dark.netflix.io/share/global.png"
+          />
+          <Movie
+            index={3}
+            imgSrc="https://cuatrobastardos.com/wp-content/uploads/2018/12/Better-Call-Saul-Season-4.jpg"
+          />
+          <Movie
+            index={4}
+            imgSrc="https://i.ytimg.com/vi/rQvIR1oL1vE/maxresdefault.jpg"
+          />
           <Movie index={5} />
           <Movie index={6} />
           <Movie index={7} />

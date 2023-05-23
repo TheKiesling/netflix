@@ -12,13 +12,18 @@
   "dependencies": {
     "@material-ui/core": "^4.12.4",
     "@material-ui/icons": "^4.11.3",
+    "autoprefixer": "^10.4.14",
+    "cssnano": "^6.0.1",
+    "html-template": "^1.2.2",
     "postcss": "^8.4.23",
+    "postcss-nested": "^6.0.1",
     "prettier": "^2.8.8",
     "prop-types": "^15.8.1",
     "react": "^18.2.0",
     "react-dom": "^18.2.0",
     "react-router-dom": "^6.10.0",
     "sass": "^1.62.1",
+    "vite-plugin-html-template": "^1.1.5",
     "vite-plugin-svgr": "^2.4.0"
   },
   "devDependencies": {
@@ -33,6 +38,7 @@
     "eslint-plugin-react-hooks": "^4.6.0",
     "eslint-plugin-react-refresh": "^0.3.4",
     "html-webpack-plugin": "^5.5.1",
-    "vite": "^4.3.2"
+    "vite": "^4.3.2",
+    "vite-plugin-html-template": "^1.1.5"
   }
 }
