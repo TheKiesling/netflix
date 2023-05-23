@@ -6,7 +6,6 @@ module.exports = {
   extends: [
     'plugin:react/recommended',
     'airbnb',
-    'prettier'
   ],
   overrides: [
   ],
@@ -18,7 +17,6 @@ module.exports = {
     'react',
   ],
   rules: {
-    'prettier/prettier': 'error',
     semi: ["error", "never"],
     "max-len": ["warn", { code: 120 }],
     "react/function-component-definition":"off"
